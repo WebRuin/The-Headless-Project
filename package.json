@@ -1,0 +1,35 @@
+{
+  "name": "the-headless-project",
+  "description": "A comprehensive list of Headless CMS services",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "sapper dev",
+    "build": "sapper build",
+    "export": "sapper export",
+    "start": "node __sapper__/build",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test": "run-p --race dev cy:run"
+  },
+  "dependencies": {
+    "@sanity/client": "^1.149.16",
+    "compression": "^1.7.1",
+    "groq": "^1.149.16",
+    "polka": "next",
+    "prettier": "^2.0.5",
+    "prettier-plugin-svelte": "^1.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "sirv": "^0.4.0",
+    "svelte-css-vars": "^0.0.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sapper": "^0.27.0",
+    "svelte": "^3.12.0",
+    "svelte-loader": "^2.9.0",
+    "webpack": "^4.7.0"
+  },
+  "main": "index.js",
+  "author": "Tim Smith",
+  "license": "MIT"
+}
