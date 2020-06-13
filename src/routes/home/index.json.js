@@ -2,8 +2,6 @@ import headlessCmss from './_headlessCmss.js';
 
 let count = 0;
 const contents = JSON.stringify(headlessCmss.map(cms => {
-  count ++;
-  console.log(count);
 	return {
 		title: cms.name,
 		slug: cms.slug,

@@ -3,16 +3,22 @@
   import groq from 'groq'
 
   const query = groq`*[_type == "cms"]{
-    title,
-    "name": author->name,
-    "categories": categories[]->title
-  }`
+    mame,
+    slug,
+    heading,
+    description,
+    url,
+    billing,
+    creditCardNeeded
+  }`;
 
-  const cmsData = async (query) => {
+  const cmsData = async function fetchData(query) {
     const data = await client.fetch(query)
     .catch(err => error(500, err));
+    console.log({data});
     return data;
   }
+
   const index = ".";
 </script>
 
@@ -123,34 +129,34 @@
 </style>
 
 <svelte:head>
-  <title>{cms.name} | The Headless Project</title>
+  <title>{cmsData.name} | The Headless Project</title>
 </svelte:head>
 
 <div class="content">
-  <h1><a rel="prefetch" href={cms.url}>{cms.name}</a></h1>
-  <h2>{cms.heading}</h2>
-  <h3>{cms.description}</h3>
+  <h1><a rel="prefetch" href={cmsData.url}>{cmsData.name}</a></h1>
+  <h2>{cmsData.heading}</h2>
+  <h3>{cmsData.description}</h3>
 
   <h2 class="orange centered">Pricing</h2>
   <section class="pricing">
-    {#each cms.pricing as pricing}
+    {#each cmsData.pricing as pricing}
       <div>
         <h3>{pricing.tier}</h3>
         <p>{pricing.description}</p>
         <p>${pricing.price}</p>
-        <ul>
+        <!-- <ul>
           {#each pricing.features as feature}
             <li>{feature}</li>
           {/each}
-        </ul>
+        </ul> -->
       </div>
     {/each}
   </section>
 
   <h2 class="orange centered">Trusted By</h2>
-  <section class="usedBy">
-    {#each cms.usedBy as usedBy}
+  <!-- <section class="usedBy">
+    {#each cmsData.usedBy as usedBy}
       <a rel='external' href={usedBy.url || index}><div>{usedBy.name}</div></a>
     {/each}
-  </section>
+  </section> -->
 </div>
