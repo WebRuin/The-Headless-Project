@@ -19,9 +19,65 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 2em;
 }
+h1 > a {
+	color: rgb(255,62,0);
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 1.4em;
+	font-weight: 500;
+	padding-top: 1rem;
+}
+
+h3 {
+	font-weight: 500;
+	color: #3D3FFF;
+}
 
 a {
 	color: inherit;
+	text-decoration: none;
+}
+
+.inlaid {
+	padding: 1rem;
+	border-radius: 15px;
+	box-shadow: inset 8px 8px 16px #12171a, 
+							inset -8px -8px 16px #1a2326;
+	border-top: 2px solid rgb(255,62,0);
+}
+.raised {
+	padding: 1rem;
+	border-radius: 9px;
+	border-top: 2px solid #5EFF19;
+	background: linear-gradient(145deg, #141a1d, #181f22);
+	box-shadow:  8px 8px 16px #12171a, 
+							-8px -8px 16px #1a2326;
+}
+
+.billing {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	padding: 1rem 2rem;
+}
+.billing > div > h4 {
+	text-align: center;
+}
+
+.billing > div > h4 > span {
+	color: #5EFF19;
+	text-transform: capitalize;
+}
+
+.orange {
+	color: rgb(255,62,0);
+}
+.centered {
+	text-align: center;
 }
 
 code {
