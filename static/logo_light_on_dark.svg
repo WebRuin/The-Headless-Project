@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <svg width="63.5mm" height="92.25mm" version="1.1" viewBox="0 0 63.5 92.25" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <metadata>
+   <rdf:RDF>
+   <cc:Work rdf:about="">
+   <dc:format>image/svg+xml</dc:format>
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   <dc:title/>
+   </cc:Work>
+   </rdf:RDF>
+   </metadata>
+  <g
+     transform="translate(-67.582357,-99.468547)"
+     id="g953"
+     stroke-width="0.26458"
+     font-size="22.578px"
+     font-family="sans-serif"
+     fill="#ff3e00">
+    <text
+       id="text943"
+       xml:space="preserve"
+       style="line-height:1.25"
+       y="148.88217"
+       x="78.290146"><tspan
+         id="tspan941"
+         stroke-width="0.26458"
+         font-size="22.578px"
+         fill="#ff3e00"
+         y="148.88217"
+         x="78.290146">C</tspan></text>
+    <text
+       id="text947"
+       xml:space="preserve"
+       style="line-height:1.25"
+       y="149.386"
+       x="104.27921"><tspan
+         id="tspan945"
+         stroke-width="0.26458"
+         font-size="22.578px"
+         fill="#ff3e00"
+         y="149.386"
+         x="104.27921">M</tspan></text>
+    <text
+       id="text951"
+       xml:space="preserve"
+       style="line-height:1.25"
+       y="180.19431"
+       x="92.732597"><tspan
+         id="tspan949"
+         stroke-width="0.26458"
+         font-size="22.578px"
+         fill="#ff3e00"
+         y="180.19431"
+         x="92.732597">S</tspan></text>
+  </g>
+  <rect
+     style="fill:#efefef;fill-opacity:1"
+     id="rect955"
+     stroke-width="0.26458"
+     height="50.067001"
+     width="2.5541"
+     y="58.10891"
+     x="2.2039008"
+     transform="rotate(-30.05)" />
+  <rect
+     style="fill:#efefef;fill-opacity:1"
+     id="rect957"
+     stroke-width="0.26458"
+     height="50.067001"
+     width="2.5541"
+     y="21.117445"
+     x="23.767414"
+     transform="rotate(-38.054)" />
+  <rect
+     style="fill:#efefef;fill-opacity:1"
+     id="rect959"
+     stroke-width="0.264581"
+     height="50.067184"
+     width="2.5541093"
+     y="-18.90888"
+     x="-27.361155"
+     transform="matrix(-0.78742713,-0.61640775,-0.61640775,0.78742713,0,0)" />
+  <rect
+     style="fill:#efefef;fill-opacity:1"
+     id="rect961"
+     stroke-width="0.26458"
+     height="50.067001"
+     width="2.5541"
+     y="27.053383"
+     x="51.472042"
+     transform="rotate(30.05)" />
+  <rect
+     style="fill:#efefef;fill-opacity:1"
+     id="rect963"
+     stroke-width="0.26458"
+     height="50.067001"
+     width="2.5541"
+     y="0.40345415"
+     x="31.190645" />
+</svg>

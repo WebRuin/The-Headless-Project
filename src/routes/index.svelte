@@ -19,6 +19,7 @@
 </script>
 
 <script>
+	export let segment;
 	export let headlessCmsServices;
 	console.log(headlessCmsServices);
 </script>
@@ -30,29 +31,34 @@
 	}
 
 	section {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
 		justify-content: space-around;
 		padding: 2rem;
 	}
 	section > article {
 		display: flex;
-		flex-direction: column;
-		width: 44%;
-		min-height: 215px;
+		flex-wrap: wrap;
 	}
+
 
 	.billing,
 	.links {
-		padding: 1rem 0;
+		padding: 1rem;
+	}
+
+	@media (max-width: 1300px) {
+		section {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 </style>
 
 <svelte:head>
 	<title>The Headless Project</title>
 </svelte:head>
-
-<h1>The Headless Project</h1>
 
 <section class="inlaid">
 	{#each headlessCmsServices as service}
@@ -73,7 +79,7 @@
 					<a rel="external nofollow" target="_blank" href="{service.url}">
 						<i class="fas fa-external-link-alt"></i> {service.name}
 					</a>
-					<a rel="prefetch" href="{service.slug.current}">
+					<a rel=prefetch aria-current="{segment === undefined ? 'page' : undefined}" href="{service.slug.current}">
 						Learn more <i class="fas fa-long-arrow-alt-right"></i>
 					</a>
 				</section>
