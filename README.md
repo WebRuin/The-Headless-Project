@@ -2,7 +2,7 @@
 
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ccb5004e-373f-4271-9cd1-a04c1b2dee46/deploy-status)](https://app.netlify.com/sites/pedantic-hypatia-391163/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ccb5004e-373f-4271-9cd1-a04c1b2dee46/deploy-status)](https://app.netlify.com/sites/flamboyant-bardeen-683adb/deploys)
 
 ## Getting started
 
