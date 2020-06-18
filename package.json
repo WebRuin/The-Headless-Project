@@ -9,7 +9,8 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
+    "test": "run-p --race dev cy:run",
+    "netlify": "sapper build && node __sapper__/build"
   },
   "dependencies": {
     "@sanity/client": "^1.149.16",
