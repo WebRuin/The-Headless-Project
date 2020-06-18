@@ -19,9 +19,10 @@
 </script>
 
 <script>
-	export let segment;
 	export let headlessCmsServices;
 	console.log(headlessCmsServices);
+
+	import HeadlessCMS from "../components/headlessCMS.svelte"
 </script>
 
 <style>
@@ -29,30 +30,13 @@
 		margin: 0 0 1em 0;
 		line-height: 1.5;
 	}
-
 	section {
 		display: grid;
-		grid-gap: 1rem;
+		grid-gap: 1.25rem;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 		justify-content: space-around;
-		padding: 2rem;
-	}
-	section > article {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-
-	.billing,
-	.links {
-		padding: 1rem;
-	}
-
-	@media (max-width: 1300px) {
-		section {
-			grid-template-columns: 1fr 1fr;
-		}
+		padding: 1.25rem;
 	}
 </style>
 
@@ -62,27 +46,6 @@
 
 <section class="inlaid">
 	{#each headlessCmsServices as service}
-		
-			<article class="raised">
-				<h3>{service.name}</h3>
-				<h4>{service.heading}</h4>
-				<h5>{service.description}</h5>
-				<section class="billing">
-					<div>
-						<h4>Billing Cycle: <span>{headlessCmsServices.billing}</span></h4>
-					</div>
-					<div>
-						<h4>Credit Card Needed: <span>{headlessCmsServices.creditCardNeeded ? "Yes" : "No"}</span></h4>
-					</div>
-				</section>
-				<section class="links inlaid">
-					<a rel="external nofollow" target="_blank" href="{service.url}">
-						<i class="fas fa-external-link-alt"></i> {service.name}
-					</a>
-					<a rel=prefetch aria-current="{segment === undefined ? 'page' : undefined}" href="{service.slug.current}">
-						Learn more <i class="fas fa-long-arrow-alt-right"></i>
-					</a>
-				</section>
-			</article>
+		<HeadlessCMS {service} />
 	{/each}
 </section>

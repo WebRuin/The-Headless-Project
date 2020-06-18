@@ -6,6 +6,7 @@
 	nav {
 		font-weight: 300;
 		height: 100%;
+		margin-left: auto;
 	}
 
 	ul {
@@ -30,7 +31,6 @@
 	.selected {
 		display: flex;
 		align-items: center;
-		color: #161d20;
 		background: rgba(255,62,0,0.5);
 	}
 
