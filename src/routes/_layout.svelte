@@ -1,24 +1,17 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-	import Footer from '../components/Footer.svelte';
+  import Tailwindcss from "../components/Tailwindcss.svelte";
+  import Footer from "../components/Footer.svelte";
+  import Header from "../components/Header.svelte";
 
-	export let segment;
+  export let segment;
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 95vw;
-		background-color: #161d20;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
+<Tailwindcss />
 
-<Nav {segment}/>
+<Header {segment} />
 
-<main>
-	<slot></slot>
-	<Footer {segment}/>
+<main class="bg-gray-200">
+  <slot />
 </main>
+
+<Footer />
