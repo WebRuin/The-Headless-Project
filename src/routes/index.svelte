@@ -11,6 +11,7 @@
 			url,
 		}
 	`;
+
   export function preload() {
     return client
       .fetch(query)

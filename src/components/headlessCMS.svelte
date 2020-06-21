@@ -3,6 +3,35 @@
   export let segment;
 </script>
 
+<style>
+	.service {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	h3{
+		display: block;
+    width: 100%;
+	}
+
+	.billing,
+	.links {
+		padding: 1rem;
+	}
+
+	.links {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media (max-width: 1300px) {
+		section {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+</style>
+
 <article class="service raised">
   <h3>{service.name}</h3>
   <h4>{service.heading}</h4>
